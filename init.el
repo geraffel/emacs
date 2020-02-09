@@ -84,3 +84,8 @@
   (setq c-basic-offset 4
 	c-syntactic-indentation-in-macros nil)
   :hook (c-mode . my-c-mode-hook))
+
+(use-package org
+  :config
+  (setq org-clock-into-drawer nil
+	org-duration-format '(("h" . t) (special . 2))))
